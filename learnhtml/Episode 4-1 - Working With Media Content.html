@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+  </head>
+  <body>
+    <h2>Video</h2>
+    <video
+      src="/video/Cat1.mp4"
+      width="720"
+      controls
+      muted
+      poster="/01.jpeg"
+      loop
+      title="lazy cat"
+    >
+      <track
+        kind="subtitles"
+        src="/video/caption/Happy_Scribe_Subtitles.vtt"
+        lang="en"
+        label="English"
+      />
+      <track
+        kind="subtitles"
+        src="/video/caption/Happy_Scribe_Subtitles.vtt"
+        lang="kh"
+        label="Khmer"
+      />
+    </video>
+    <hr width="50%" />
+    <h2>Audio</h2>
+    <audio
+      src="/audio/drive-breakbeat-173062.mp3"
+      controls
+      muted
+      loop
+      autoplay
+      title="Dance audio"
+    >
+      <source src="/audio/drive-breakbeat-173062.mp3" type="audio/mp3" />
+    </audio>
+  </body>
+</html>
