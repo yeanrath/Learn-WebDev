@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        table{
+            width: 60%;
+        }
+        h2{
+            text-align: center;
+        }
+        #table-wrapper{
+            width: 80%;
+            margin: auto;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="table-wrapper">
+    <h2>learning table</h2>
+    <table border="1px" cellspacing="0">
+        <caption>How i choose to spend my money</caption>
+        <thead>
+            <th>Puchase</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Evaluation</th>
+            <th>Cost</th>
+        </thead>
+        <tr>
+            <td>haircut</td>
+            <td>hairdresser</td>
+            <td>2020/06/26</td>
+            <td>great idea</td>
+            <td>30$</td>
+        </tr>
+        <tr>
+            <td>lasagna</td>
+            <td>restaurant</td>
+            <td>2020/06/03</td>
+            <td>regret</td>
+            <td>18$</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total</td>
+                <td>48$</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Nested table</h2>
+    <table border="1" cellspacing="0">
+    <thead>
+        <th>head1</th>
+        <th>head2</th>
+        <th>head3</th>
+    </thead>
+    <tr>
+        <td>
+            <table border="1" cellspacing="0">
+                <thead>
+                    <th>subhead1</th>
+                    <th>subhead1</th>
+                    <th>subhead1</th>
+                </thead>
+                <tr>
+                    <td>cell1</td>
+                    <td>cell2</td>
+                    <td>cell3</td>
+                </tr>
+            </table>
+        </td>
+        <td>cell2</td>
+        <td>cell3</td>
+    </tr>
+</table>
+<h2>row and colume spending</h2>
+<table border="1" cellspacing="0">
+    <caption>spending</caption>
+    <thead>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th colspan="3">clothes</th>
+        <th colspan="2">accessories</th>
+    </thead>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>trousers</td>
+        <td>skirts</td>
+        <td>dresses</td>
+        <td>bracelets</td>
+        <td>rings</td>
+    </tr>
+    <tr>
+        <td rowspan="3">belguim</td>
+        <td>antwerp</td>
+        <td>56</td>
+        <td>22</td>
+        <td>43</td>
+        <td>72</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>gent</td>
+        <td>46</td>
+        <td>18</td>
+        <td>50</td>
+        <td>61</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>brussels</td>
+        <td>46</td>
+        <td>18</td>
+        <td>50</td>
+        <td>61</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td rowspan="2">the netherland</td>
+        <td>amsterdam</td>
+        <td>89</td>
+        <td>34</td>
+        <td>69</td>
+        <td>85</td>
+        <td>38</td>
+    </tr>
+    <tr>
+        <td>utrecht</td>
+        <td>80</td>
+        <td>25</td>
+        <td>21</td>
+        <td>54</td>
+        <td>32</td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
